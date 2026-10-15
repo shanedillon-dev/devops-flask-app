@@ -1,13 +1,11 @@
 from flask import Flask
 
-app = Flask(__name__) 
+app = Flask(__name__)
 
 
 @app.route('/')
 def say_hello():
- HEAD
-    return ('<p>Welcome, This is another string</p>
- new_greeting
+    return ('<p>Welcome, This is another string</p>'
             '<p><a href="/about">About</a></p>'
             '<p><a href="/contact">Contact</a></p>')
 
@@ -15,7 +13,7 @@ def say_hello():
 @app.route('/about')
 def about():
     return ('<p>This application is running on the Flask web framework.</p>'
-           ' <p><a href="https://www.python.org/">Python website</a></p>'
+            '<p><a href="https://www.python.org/">Python website</a></p>'
             '<p><a href="https://flask.palletsprojects.com/">Visit the Flask website</a></p>'
             '<p><a href="/">Back to home</a></p>')
 
@@ -23,6 +21,5 @@ def about():
 @app.route('/contact')
 def contact():
     return ('<p>Contact me at: '
-            '<a href="mailto:your.email@example.com">your.email@example.com</a></p>'
+            '<a href="mailto:C24417854@mytudublin.ie">C24417854@mytudublin.ie</a></p>'
             '<p><a href="/">Back to home</a></p>')
- 
